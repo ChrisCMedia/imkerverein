@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienen & Co - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans bg-amber-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-8 text-center">Bienen & Co</h1>
+
+                <!-- Hero Section -->
+                <div class="relative h-96 mb-12 rounded-lg overflow-hidden">
+                    <img src="img/insects/hero.jpg" alt="Biene auf Blüte" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
+                        <div class="text-white p-8 max-w-2xl">
+                            <h2 class="text-3xl font-bold mb-4">Die faszinierende Welt der Bestäuber</h2>
+                            <p class="text-lg">Entdecken Sie die wichtige Rolle von Bienen, Hummeln und anderen Insekten für unser Ökosystem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insect Categories -->
+                <section class="mb-16">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Honigbienen -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <img src="img/insects/honeybee.jpg" alt="Honigbiene" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Honigbienen</h3>
+                            <p class="text-gray-700 mb-4">
+                                Die Westliche Honigbiene (Apis mellifera) ist der bekannteste Bestäuber. In einem Volk leben bis zu 
+                                50.000 Bienen zusammen. Sie sind unverzichtbar für die Bestäubung vieler Nutz- und Wildpflanzen.
+                            </p>
+                            <a href="#" class="text-amber-600 hover:text-amber-700 flex items-center">
+                                Mehr über Honigbienen
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+
+                        <!-- Hummeln -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <img src="img/insects/bumblebee.jpg" alt="Hummel" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Hummeln</h3>
+                            <p class="text-gray-700 mb-4">
+                                Hummeln sind wichtige Bestäuber, die auch bei kühlerem Wetter aktiv sind. Sie können durch 
+                                Vibration ihrer Flugmuskulatur sogar Pollen aus Blüten herausschütteln.
+                            </p>
+                            <a href="#" class="text-amber-600 hover:text-amber-700 flex items-center">
+                                Mehr über Hummeln
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+
+                        <!-- Wildbienen -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <img src="img/insects/wildbee.jpg" alt="Wildbiene" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Wildbienen</h3>
+                            <p class="text-gray-700 mb-4">
+                                In Deutschland gibt es über 560 Wildbienenarten. Viele sind Einzelgänger und haben sich auf 
+                                bestimmte Pflanzenarten spezialisiert.
+                            </p>
+                            <a href="#" class="text-amber-600 hover:text-amber-700 flex items-center">
+                                Mehr über Wildbienen
+                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Importance Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Bedeutung für das Ökosystem</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="card p-8 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="sun" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-semibold">Bestäubung</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Etwa 80% aller Nutz- und Wildpflanzen sind auf die Bestäubung durch Insekten angewiesen. 
+                                Ohne sie wäre unsere Ernährung deutlich eintöniger und die Artenvielfalt geringer.
+                            </p>
+                        </div>
+                        <div class="card p-8 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="link" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-semibold">Ökologisches Gleichgewicht</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Bestäuber sind ein wichtiges Bindeglied im Nahrungsnetz. Sie ernähren sich von Nektar und Pollen 
+                                und dienen selbst als Nahrung für andere Tiere.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Help Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">So können Sie helfen</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="home" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Nisthilfen anbieten</h3>
+                            <p class="text-gray-700">
+                                Bauen oder kaufen Sie Insektenhotels und schaffen Sie natürliche Nistmöglichkeiten im Garten.
+                            </p>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="flower" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Blühflächen anlegen</h3>
+                            <p class="text-gray-700">
+                                Pflanzen Sie heimische Blumen und Kräuter, die Nektar und Pollen bieten.
+                            </p>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="droplet" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Pestizide vermeiden</h3>
+                            <p class="text-gray-700">
+                                Verzichten Sie auf chemische Pflanzenschutzmittel und setzen Sie auf natürliche Alternativen.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Resources -->
+                <section>
+                    <h2 class="text-3xl font-bold mb-8 text-center">Weiterführende Informationen</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="card p-6 hover-grow fade-in">
+                            <h3 class="text-xl font-semibold mb-4">Literaturempfehlungen</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i data-feather="book" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <span class="text-gray-700">"Die Welt der Bienen" von Jürgen Tautz</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="book" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <span class="text-gray-700">"Wildbienen" von Paul Westrich</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="book" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <span class="text-gray-700">"Hummeln bestimmen, ansiedeln, vermehren, schützen" von Felix Amiet</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <h3 class="text-xl font-semibold mb-4">Nützliche Links</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i data-feather="link" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <a href="#" class="text-amber-600 hover:text-amber-700">Deutschland summt! - Initiative für Bienen</a>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="link" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <a href="#" class="text-amber-600 hover:text-amber-700">Wildbienen.info - Artbestimmung und Schutz</a>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="link" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
+                                    <a href="#" class="text-amber-600 hover:text-amber-700">NABU - Insektenfreundlicher Garten</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

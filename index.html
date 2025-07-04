@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Custom styles can be added here if needed */
+        body {
+            background-color: #f0f4f8; /* A light blue-gray background for the whole page */
+        }
+        .banner {
+            background-color: #fde68a; /* amber-200 */
+        }
+        .nav-bar {
+             background-color: #fde68a; /* amber-200 */
+        }
+        .main-content {
+            background-color: #e0f2fe; /* sky-100 */
+        }
+        .image-placeholder {
+            background-color: #d1fae5; /* green-100 */
+        }
+        .contact-box {
+            background-color: #fde68a; /* amber-200 */
+        }
+        .next-event {
+            background-color: #d1fae5; /* green-100 */
+        }
+        .footer {
+            background-color: #fde68a; /* amber-200 */
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header with Hero Section -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="bg-amber-50 py-16">
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="fade-in">
+                            <h1 class="text-4xl font-bold mb-4">Willkommen beim Imkerverein Hadamar-Dornburg</h1>
+                            <p class="text-lg text-gray-700 mb-6">Entdecken Sie die faszinierende Welt der Bienen mit uns. Wir setzen uns für den Erhalt der Bienenvölker und die Förderung der Imkerei in unserer Region ein.</p>
+                            <div class="flex space-x-4">
+                                <a href="/ueber-uns.html" class="btn btn-primary">Mehr erfahren</a>
+                                <a href="/kontakt.html" class="btn btn-secondary">Kontakt</a>
+                            </div>
+                        </div>
+                        <div id="rotating-image" class="rounded-lg overflow-hidden shadow-xl hover-grow fade-in">
+                            <!-- Image will be inserted by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="py-16">
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Next Event Card -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="calendar" class="text-amber-500 mr-2"></i>
+                                <h3 class="text-xl font-semibold">Nächster Termin</h3>
+                            </div>
+                            <div class="text-gray-700">
+                                <p class="font-semibold">Monatlicher Imkerstammtisch</p>
+                                <p>Jeden ersten Freitag im Monat</p>
+                                <p>19:00 Uhr, Gasthaus "Zur Biene"</p>
+                            </div>
+                        </div>
+
+                        <!-- Latest News Card -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="file-text" class="text-amber-500 mr-2"></i>
+                                <h3 class="text-xl font-semibold">Aktuelles</h3>
+                            </div>
+                            <div class="text-gray-700">
+                                <p class="font-semibold">Neue Blühwiese angelegt</p>
+                                <p>Gemeinsam schaffen wir Lebensraum für Bienen und andere Insekten.</p>
+                                <a href="/aktuelles.html" class="text-amber-600 hover:underline mt-2 inline-block">Weiterlesen →</a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="mail" class="text-amber-500 mr-2"></i>
+                                <h3 class="text-xl font-semibold">Kontakt</h3>
+                            </div>
+                            <div class="text-gray-700">
+                                <p><strong>Michael Stahl</strong></p>
+                                <p>1. Vorsitzender</p>
+                                <p>Tel: 06433 / 9490139</p>
+                                <a href="mailto:info@imkerverein-hadamar-dornburg.de" class="text-amber-600 hover:underline">info@imkerverein-hadamar-dornburg.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

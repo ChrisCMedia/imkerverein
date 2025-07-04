@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Honeycomb -->
+    <path d="M16 2L4 9V23L16 30L28 23V9L16 2Z" fill="#FBB03B" stroke="#92400E" stroke-width="2"/>
+    
+    <!-- Bee Body -->
+    <path d="M16 12C14.8954 12 14 12.8954 14 14V18C14 19.1046 14.8954 20 16 20C17.1046 20 18 19.1046 18 18V14C18 12.8954 17.1046 12 16 12Z" fill="#111827"/>
+    
+    <!-- Bee Stripes -->
+    <path d="M14.5 15H17.5" stroke="#FBB03B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M14.5 17H17.5" stroke="#FBB03B" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Wings -->
+    <path d="M19 15C20.1046 15 21 14.5523 21 14C21 13.4477 20.1046 13 19 13" stroke="#E5E7EB" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M13 15C11.8954 15 11 14.5523 11 14C11 13.4477 11.8954 13 13 13" stroke="#E5E7EB" stroke-width="1.5" stroke-linecap="round"/>
+</svg> 

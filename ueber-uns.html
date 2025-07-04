@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans bg-amber-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-8 text-center">Über uns</h1>
+
+                <!-- Hero Section -->
+                <div class="relative h-96 mb-12 rounded-lg overflow-hidden">
+                    <img src="img/about/vereinsheim.jpg" alt="Unser Vereinsheim" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
+                        <div class="text-white p-8 max-w-2xl">
+                            <h2 class="text-3xl font-bold mb-4">Willkommen beim Imkerverein Hadamar-Dornburg</h2>
+                            <p class="text-lg">Seit über 100 Jahren setzen wir uns für die Imkerei und den Erhalt der Bienenvölker in unserer Region ein.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission & Vision -->
+                <section class="mb-16">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="card p-8 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="target" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-semibold">Unsere Mission</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Wir fördern die nachhaltige Imkerei und setzen uns für den Schutz der Honigbienen und anderer Bestäuber ein. 
+                                Durch Bildung und praktische Unterstützung helfen wir Imkern und interessierten Bürgern, die Bedeutung der 
+                                Bienen für unser Ökosystem zu verstehen.
+                            </p>
+                        </div>
+                        <div class="card p-8 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="eye" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-2xl font-semibold">Unsere Vision</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Wir streben eine Zukunft an, in der die Imkerei als wichtiger Teil unserer Kultur erhalten bleibt und 
+                                die Bedeutung der Bienen für die Biodiversität von allen Menschen geschätzt wird. Gemeinsam schaffen 
+                                wir eine bienenfreundliche Umgebung.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vorstand -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Unser Vorstand</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/about/vorstand1.jpg" alt="Michael Stahl" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Michael Stahl</h3>
+                            <p class="text-gray-600">1. Vorsitzender</p>
+                            <div class="mt-4 text-gray-700">
+                                <p>Imker seit 1995</p>
+                                <p>Schwerpunkt: Vereinsführung & Öffentlichkeitsarbeit</p>
+                            </div>
+                        </div>
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/about/vorstand2.jpg" alt="Anna Schmidt" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Anna Schmidt</h3>
+                            <p class="text-gray-600">2. Vorsitzende</p>
+                            <div class="mt-4 text-gray-700">
+                                <p>Imkerin seit 2005</p>
+                                <p>Schwerpunkt: Schulungen & Workshops</p>
+                            </div>
+                        </div>
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/about/vorstand3.jpg" alt="Peter Weber" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Peter Weber</h3>
+                            <p class="text-gray-600">Schriftführer</p>
+                            <div class="mt-4 text-gray-700">
+                                <p>Imker seit 2010</p>
+                                <p>Schwerpunkt: Dokumentation & Organisation</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vereinsgeschichte -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Unsere Geschichte</h2>
+                    <div class="card p-8 hover-grow fade-in">
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 text-center">
+                                    <span class="text-xl font-bold text-amber-600">1920</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <h3 class="text-xl font-semibold mb-2">Gründung des Vereins</h3>
+                                    <p class="text-gray-700">
+                                        Am 15. März 1920 wurde der Imkerverein von 12 engagierten Imkern gegründet.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 text-center">
+                                    <span class="text-xl font-bold text-amber-600">1965</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <h3 class="text-xl font-semibold mb-2">Bau des Vereinsheims</h3>
+                                    <p class="text-gray-700">
+                                        Einweihung unseres Vereinsheims mit Lehrbienenstand.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 text-center">
+                                    <span class="text-xl font-bold text-amber-600">2020</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <h3 class="text-xl font-semibold mb-2">100-jähriges Jubiläum</h3>
+                                    <p class="text-gray-700">
+                                        Feier des 100-jährigen Bestehens mit großem Festakt und Ausstellung.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Aktivitäten -->
+                <section>
+                    <h2 class="text-3xl font-bold mb-8 text-center">Unsere Aktivitäten</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="book-open" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Schulungen</h3>
+                            <p class="text-gray-700">
+                                Regelmäßige Workshops und Kurse für Anfänger und Fortgeschrittene.
+                            </p>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="users" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Stammtisch</h3>
+                            <p class="text-gray-700">
+                                Monatlicher Austausch und geselliges Beisammensein.
+                            </p>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="map" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Exkursionen</h3>
+                            <p class="text-gray-700">
+                                Besuche bei anderen Imkern und Instituten.
+                            </p>
+                        </div>
+                        <div class="card p-6 hover-grow fade-in">
+                            <i data-feather="heart" class="text-amber-500 w-12 h-12 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Naturschutz</h3>
+                            <p class="text-gray-700">
+                                Aktiver Einsatz für Biodiversität und Bienengesundheit.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

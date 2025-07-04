@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans bg-amber-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl font-bold mb-8 text-center">Kontakt</h1>
+                    
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <!-- Contact Information -->
+                        <div class="space-y-6">
+                            <div class="card p-6">
+                                <h2 class="text-2xl font-semibold mb-4">Direkte Kontaktaufnahme</h2>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <i data-feather="user" class="text-amber-500 mt-1"></i>
+                                        <div>
+                                            <p class="font-semibold">Michael Stahl</p>
+                                            <p class="text-gray-600">1. Vorsitzender</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <i data-feather="map-pin" class="text-amber-500 mt-1"></i>
+                                        <div>
+                                            <p>Siegener Str. 7</p>
+                                            <p>65589 Hadamar</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i data-feather="phone" class="text-amber-500"></i>
+                                        <p>06433 / 9490139</p>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i data-feather="mail" class="text-amber-500"></i>
+                                        <a href="mailto:info@imkerverein-hadamar-dornburg.de" class="text-amber-600 hover:underline">
+                                            info@imkerverein-hadamar-dornburg.de
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card p-6">
+                                <h2 class="text-2xl font-semibold mb-4">Öffnungszeiten</h2>
+                                <div class="space-y-2">
+                                    <p><span class="font-semibold">Imkerstammtisch:</span><br>
+                                    Jeden ersten Freitag im Monat<br>
+                                    19:00 Uhr im Gasthaus "Zur Biene"</p>
+                                    
+                                    <p class="mt-4"><span class="font-semibold">Vereinsheim:</span><br>
+                                    Nach Vereinbarung</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="card p-6">
+                            <h2 class="text-2xl font-semibold mb-6">Kontaktformular</h2>
+                            <form id="contact-form" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail *</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Betreff *</label>
+                                    <input type="text" id="subject" name="subject" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Nachricht *</label>
+                                    <textarea id="message" name="message" rows="5" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500"></textarea>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <input type="checkbox" id="privacy" name="privacy" required
+                                        class="mt-1 h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded">
+                                    <label for="privacy" class="ml-2 text-sm text-gray-600">
+                                        Ich habe die <a href="/datenschutz.html" class="text-amber-600 hover:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                                    </label>
+                                </div>
+                                
+                                <div>
+                                    <button type="submit" class="btn btn-primary w-full">
+                                        Nachricht senden
+                                    </button>
+                                </div>
+                                
+                                <p class="text-sm text-gray-600">* Pflichtfelder</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Form Submission Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your server
+            // For now, we'll just show an alert
+            alert('Vielen Dank für Ihre Nachricht! Wir werden uns zeitnah bei Ihnen melden.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

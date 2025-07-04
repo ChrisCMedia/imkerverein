@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Custom styles can be added here if needed */
+        body {
+            background-color: #f0f4f8; /* A light blue-gray background for the whole page */
+        }
+        .banner {
+            background-color: #fde68a; /* amber-200 */
+        }
+        .nav-bar {
+             background-color: #fde68a; /* amber-200 */
+        }
+        .main-content {
+            background-color: #ffffff;
+        }
+        .footer {
+            background-color: #fde68a; /* amber-200 */
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header with Navigation -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Page Header -->
+            <section class="bg-amber-50 py-8">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-3xl font-bold text-gray-800">Datenschutzerklärung</h1>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="bg-white rounded-lg shadow-md p-8">
+                        <div class="prose max-w-none text-gray-700 space-y-6">
+                            <div class="card p-6 hover-grow">
+                                <div class="flex items-center mb-4">
+                                    <i data-feather="shield" class="text-amber-500 mr-2"></i>
+                                    <h2 class="text-xl font-semibold">Allgemeiner Hinweis und verantwortliche Stelle</h2>
+                                </div>
+                                <p class="mb-6">
+                                    Hier wird die Datenschutzerklärung des Vereins stehen. Es ist wichtig, eine umfassende und rechtssichere Erklärung zu erstellen, die alle Aspekte der Datenerhebung und -verarbeitung auf der Website abdeckt.
+                                </p>
+                            </div>
+
+                            <div class="card p-6 hover-grow">
+                                <div class="flex items-center mb-4">
+                                    <i data-feather="list" class="text-amber-500 mr-2"></i>
+                                    <h2 class="text-xl font-semibold">Inhaltsübersicht</h2>
+                                </div>
+                                <ul class="list-disc list-inside space-y-3">
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Allgemeiner Hinweis und verantwortliche Stelle</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Ihre Rechte als betroffene Person</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Datenerfassung auf dieser Website (Cookies, Server-Log-Dateien, Kontaktformular etc.)</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Analyse-Tools und Werbung</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Newsletterdaten</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
+                                        <span>Plugins und Tools (z.B. Google Maps, YouTube)</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card p-6 hover-grow">
+                                <div class="flex items-center mb-4">
+                                    <i data-feather="alert-triangle" class="text-amber-500 mr-2"></i>
+                                    <h2 class="text-xl font-semibold">Wichtiger Hinweis</h2>
+                                </div>
+                                <p class="text-gray-700">
+                                    Bitte lassen Sie diesen Text von einem Experten für Datenschutzrecht erstellen oder prüfen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

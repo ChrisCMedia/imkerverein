@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termine - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            background-color: #f0f4f8;
+        }
+        .banner {
+            background-color: #fde68a;
+        }
+        .content {
+            background-color: #ffffff;
+        }
+        .footer {
+            background-color: #fde68a;
+        }
+    </style>
+</head>
+<body class="font-sans bg-amber-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/" class="nav-link">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/" class="block py-2">Startseite</a></li>
+                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-8 text-center">Termine</h1>
+
+                <!-- Calendar Navigation -->
+                <div class="flex justify-between items-center mb-8">
+                    <button class="btn btn-primary">
+                        <i data-feather="chevron-left" class="w-4 h-4 mr-2"></i>
+                        März 2024
+                    </button>
+                    <h2 class="text-2xl font-semibold">April 2024</h2>
+                    <button class="btn btn-primary">
+                        Mai 2024
+                        <i data-feather="chevron-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Events List -->
+                <div class="space-y-6">
+                    <!-- Regular Event -->
+                    <div class="card p-6 hover-grow fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-16 text-center">
+                                <div class="text-2xl font-bold text-amber-600">05</div>
+                                <div class="text-gray-600">Apr</div>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Monatlicher Imkerstammtisch</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                                    19:00 Uhr
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                                    Gasthaus "Zur Biene", Hadamar
+                                </div>
+                                <p class="text-gray-700">
+                                    Unser monatlicher Stammtisch für Erfahrungsaustausch und gemütliches Beisammensein.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workshop Event -->
+                    <div class="card p-6 hover-grow fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-16 text-center">
+                                <div class="text-2xl font-bold text-amber-600">13</div>
+                                <div class="text-gray-600">Apr</div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <h3 class="text-xl font-semibold">Workshop: Frühjahrsrevision</h3>
+                                    <span class="bg-amber-100 text-amber-800 text-sm px-2 py-1 rounded">Workshop</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                                    10:00 - 14:00 Uhr
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                                    Vereinsbienenstand
+                                </div>
+                                <p class="text-gray-700 mb-4">
+                                    Praktischer Workshop zur Durchführung der Frühjahrsrevision. Bitte Schutzkleidung mitbringen.
+                                </p>
+                                <button class="btn btn-primary">
+                                    Jetzt anmelden
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field Trip Event -->
+                    <div class="card p-6 hover-grow fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-16 text-center">
+                                <div class="text-2xl font-bold text-amber-600">20</div>
+                                <div class="text-gray-600">Apr</div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <h3 class="text-xl font-semibold">Exkursion: Blühwiesen</h3>
+                                    <span class="bg-lime-100 text-lime-800 text-sm px-2 py-1 rounded">Exkursion</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                                    14:00 - 16:00 Uhr
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                                    Treffpunkt: Parkplatz Rathaus
+                                </div>
+                                <p class="text-gray-700 mb-4">
+                                    Gemeinsame Besichtigung der neu angelegten Blühwiesen mit fachkundiger Führung.
+                                </p>
+                                <button class="btn btn-primary">
+                                    Teilnehmen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Calendar -->
+                <div class="mt-12 text-center">
+                    <a href="#" class="btn btn-primary inline-flex items-center">
+                        <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+                        Kalender herunterladen (ICS)
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 py-8 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Über uns</h4>
+                        <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/termine.html" class="text-gray-700 hover:text-amber-800">Termine</a></li>
+                            <li><a href="/aktuelles.html" class="text-gray-700 hover:text-amber-800">Aktuelles</a></li>
+                            <li><a href="/infos.html" class="text-gray-700 hover:text-amber-800">Infos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/impressum.html" class="text-gray-700 hover:text-amber-800">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-amber-800">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
+                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

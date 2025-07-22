@@ -61,192 +61,178 @@
             <div class="container mx-auto px-4">
                 <h1 class="text-4xl font-bold mb-8 text-center">Informationen</h1>
 
-                <!-- Quick Links -->
+                <!-- Allgemeine Infos Section -->
                 <section class="mb-16">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="card p-6 hover-grow fade-in">
-                            <div class="flex items-center mb-4">
-                                <i data-feather="book" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">Imkerkurse</h3>
-                            </div>
-                            <p class="text-gray-700 mb-4">
-                                Lernen Sie die Grundlagen der Bienenhaltung in unseren Anfängerkursen.
-                            </p>
-                            <a href="#courses" class="text-amber-600 hover:text-amber-700 flex items-center">
-                                Zu den Kursen
-                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                            </a>
+                    <h2 class="text-3xl font-bold mb-8 text-center">Allgemeine Infos</h2>
+                    
+                    <!-- Mitglied werden -->
+                    <div class="card p-6 hover-grow fade-in mb-8">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="users" class="text-amber-500 w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-semibold">Mitglied werden</h3>
                         </div>
+                        <div class="text-gray-700 space-y-3">
+                            <p>Werden Sie Teil unserer Imkergemeinschaft und profitieren Sie von unserem Wissen und unserer Erfahrung!</p>
+                            <ul class="space-y-2 ml-4">
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                    <span><strong>Jahresbeitrag:</strong> 30€ für Erwachsene</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                    <span><strong>Jugendliche (bis 18 Jahre):</strong> Beitragsfrei</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                    <span>Zugang zu Vereinsgerätschaften</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                    <span>Vergünstigte Kurse und Veranstaltungen</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                    <span>Fachliche Beratung und Unterstützung</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Downloads -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
                         <div class="card p-6 hover-grow fade-in">
                             <div class="flex items-center mb-4">
                                 <i data-feather="download" class="text-amber-500 w-8 h-8 mr-3"></i>
                                 <h3 class="text-xl font-semibold">Downloads</h3>
                             </div>
-                            <p class="text-gray-700 mb-4">
-                                Wichtige Dokumente und Formulare für Mitglieder.
-                            </p>
-                            <a href="#downloads" class="text-amber-600 hover:text-amber-700 flex items-center">
-                                Zu den Downloads
-                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                            </a>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="file-text" class="w-5 h-5 mr-2 group-hover:text-amber-600"></i>
+                                        <span class="flex-1">Meldebogen zur Bienenhaltung</span>
+                                        <span class="text-sm text-gray-500 ml-2">(PDF)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="file-text" class="w-5 h-5 mr-2 group-hover:text-amber-600"></i>
+                                        <span class="flex-1">Satzung des Vereins</span>
+                                        <span class="text-sm text-gray-500 ml-2">(PDF)</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+
+                        <!-- Externe Links -->
                         <div class="card p-6 hover-grow fade-in">
                             <div class="flex items-center mb-4">
-                                <i data-feather="help-circle" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">FAQ</h3>
+                                <i data-feather="external-link" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Externe Links</h3>
+                            </div>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="https://deutscherimkerbund.de" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Deutscher Imkerbund</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://llh.hessen.de/bildung/bieneninstitut-kirchhain" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Bieneninstitut Kirchhain</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bienenkunde.rlp.de" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Bieneninstitut Mayen</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://hessische-imker.de" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Landesverband Hessischer Imker</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bienenkunde.rlp.de/Bienenkunde/Varroawetter/bundesweit-n-PLZ" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Varroawetter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bienenkunde.rlp.de/Bienenkunde/Infobrief/An-und-Abmeldung" target="_blank" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="external-link" class="w-4 h-4 mr-2 group-hover:text-amber-600"></i>
+                                        <span>Infobrief Bienen</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Termine Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Termine</h2>
+                    <div class="card p-6 hover-grow fade-in">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="calendar" class="text-amber-500 w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-semibold">Terminvorschau</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Hier finden Sie eine Übersicht über die kommenden Termine und Veranstaltungen der nächsten Monate.
+                        </p>
+                        <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
+                            <p class="text-sm text-amber-800 flex items-center">
+                                <i data-feather="info" class="w-4 h-4 mr-2"></i>
+                                Die detaillierte Terminübersicht finden Sie auf unserer <a href="/termine.html" class="text-amber-600 hover:text-amber-700 underline">Termine-Seite</a>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Beratung Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Beratung & Sachverständige</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Imkerberater -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="user-check" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Imkerberater</h3>
                             </div>
                             <p class="text-gray-700 mb-4">
-                                Häufig gestellte Fragen rund um die Imkerei.
+                                Unser Imkerberater steht Ihnen bei allen Fragen rund um die Bienenhaltung zur Seite. 
+                                Von der ersten Beute bis zur Honigvermarktung - hier erhalten Sie kompetente Beratung.
                             </p>
-                            <a href="#faq" class="text-amber-600 hover:text-amber-700 flex items-center">
-                                Zu den FAQs
-                                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                            </a>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-800 mb-2">Kontakt:</h4>
+                                <p class="text-gray-700">
+                                    <strong>Max Mustermann</strong><br>
+                                    Tel: 06433 / 123456<br>
+                                    E-Mail: berater@imkerverein-hadamar.de
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </section>
 
-                <!-- Courses Section -->
-                <section id="courses" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Imkerkurse</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Bienensachverständige -->
                         <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-4">Grundkurs Imkerei</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i data-feather="calendar" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Start: März 2024</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="clock" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">10 Termine, jeweils samstags</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="map-pin" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Vereinsheim & Lehrbienenstand</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="info" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Theorie und Praxis für Anfänger</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary mt-6">Jetzt anmelden</button>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-4">Aufbaukurs Königinnenzucht</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i data-feather="calendar" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Start: Mai 2024</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="clock" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">5 Termine, jeweils sonntags</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="map-pin" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Zuchtstation</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i data-feather="info" class="text-amber-500 w-5 h-5 mr-2 mt-1"></i>
-                                    <span class="text-gray-700">Für fortgeschrittene Imker</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary mt-6">Jetzt anmelden</button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Downloads Section -->
-                <section id="downloads" class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Downloads</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-4">Formulare</h3>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Mitgliedsantrag
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 125 KB)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Standmeldung
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 85 KB)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Honigdeklaration
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 150 KB)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-4">Merkblätter</h3>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Varroabehandlung
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 250 KB)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Honigverarbeitung
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 180 KB)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center text-gray-700 hover:text-amber-600">
-                                        <i data-feather="file-text" class="w-5 h-5 mr-2"></i>
-                                        Winterfütterung
-                                        <span class="text-sm text-gray-500 ml-2">(PDF, 195 KB)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- FAQ Section -->
-                <section id="faq">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Häufig gestellte Fragen</h2>
-                    <div class="space-y-6">
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-2">Wie werde ich Mitglied im Verein?</h3>
-                            <p class="text-gray-700">
-                                Füllen Sie einfach den Mitgliedsantrag aus und senden Sie ihn an uns. Nach Prüfung Ihres Antrags 
-                                melden wir uns zeitnah bei Ihnen. Der Jahresbeitrag beträgt 30€.
+                            <div class="flex items-center mb-4">
+                                <i data-feather="shield-check" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Bienensachverständige</h3>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Unsere Bienensachverständige führt amtliche Untersuchungen durch und berät bei 
+                                Bienenkrankheiten. Sie ist Ihre Ansprechpartnerin für alle gesundheitlichen Fragen der Bienenvölker.
                             </p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-2">Was kostet ein Imkerkurs?</h3>
-                            <p class="text-gray-700">
-                                Der Grundkurs kostet 150€ für Vereinsmitglieder und 200€ für Nichtmitglieder. Im Preis enthalten 
-                                sind alle Unterlagen und die Nutzung der Vereinsausrüstung während des Kurses.
-                            </p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-2">Kann ich Gerätschaften ausleihen?</h3>
-                            <p class="text-gray-700">
-                                Ja, Vereinsmitglieder können verschiedene Geräte wie Honigschleuder, Wachsschmelzer etc. gegen 
-                                eine kleine Gebühr ausleihen. Die Reservierung erfolgt über unseren Gerätewart.
-                            </p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <h3 class="text-xl font-semibold mb-2">Wo kann ich Bienenvölker kaufen?</h3>
-                            <p class="text-gray-700">
-                                Wir vermitteln regelmäßig Bienenvölker von erfahrenen Vereinsmitgliedern an Neuimker. Die Völker 
-                                sind gesund und auf regionale Bedingungen angepasst. Sprechen Sie uns einfach an.
-                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-800 mb-2">Kontakt:</h4>
+                                <p class="text-gray-700">
+                                    <strong>Dr. Maria Musterfrau</strong><br>
+                                    Tel: 06433 / 654321<br>
+                                    E-Mail: sachverstaendige@imkerverein-hadamar.de
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>

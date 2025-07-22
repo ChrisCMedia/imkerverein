@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             background-color: #f0f4f8;
@@ -101,61 +100,22 @@
                     </div>
                 </div>
 
-                <!-- Current Data Section -->
+                <!-- TrachtNet iFrame Integration -->
                 <section class="mb-16">
                     <h2 class="text-3xl font-bold mb-8 text-center">Aktuelle Messwerte</h2>
-                    <div class="grid md:grid-cols-4 gap-8">
-                        <div class="card p-6 hover-grow fade-in">
-                            <div class="flex items-center mb-4">
-                                <i data-feather="trending-up" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">Gewicht</h3>
-                            </div>
-                            <p class="text-3xl font-bold text-amber-600">35,7 kg</p>
-                            <p class="text-gray-600 text-sm">Letzte Messung: Heute, 14:30 Uhr</p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <div class="flex items-center mb-4">
-                                <i data-feather="thermometer" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">Temperatur</h3>
-                            </div>
-                            <p class="text-3xl font-bold text-amber-600">22,5 °C</p>
-                            <p class="text-gray-600 text-sm">Außentemperatur</p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <div class="flex items-center mb-4">
-                                <i data-feather="droplet" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">Luftfeuchtigkeit</h3>
-                            </div>
-                            <p class="text-3xl font-bold text-amber-600">65 %</p>
-                            <p class="text-gray-600 text-sm">Relative Luftfeuchtigkeit</p>
-                        </div>
-                        <div class="card p-6 hover-grow fade-in">
-                            <div class="flex items-center mb-4">
-                                <i data-feather="sun" class="text-amber-500 w-8 h-8 mr-3"></i>
-                                <h3 class="text-xl font-semibold">Tagestrend</h3>
-                            </div>
-                            <p class="text-3xl font-bold text-green-600">+1,2 kg</p>
-                            <p class="text-gray-600 text-sm">Gewichtszunahme heute</p>
-                        </div>
+                    <div class="iframe-container rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+                            src="https://www.bienenkunde.rlp.de/Bienenkunde/Trachtnet/" 
+                            title="Stockwaage Messwerte" 
+                            loading="lazy" 
+                            width="100%" 
+                            height="800" 
+                            style="border:0;">
+                        </iframe>
                     </div>
                 </section>
 
-                <!-- Chart Section -->
-                <section class="mb-16">
-                    <div class="card p-6">
-                        <div class="flex justify-between items-center mb-6">
-                            <h2 class="text-2xl font-bold">Gewichtsverlauf</h2>
-                            <div class="flex space-x-2">
-                                <button class="btn btn-secondary" onclick="updateChart('day')">Tag</button>
-                                <button class="btn btn-secondary" onclick="updateChart('week')">Woche</button>
-                                <button class="btn btn-secondary" onclick="updateChart('month')">Monat</button>
-                            </div>
-                        </div>
-                        <div class="h-96">
-                            <canvas id="weightChart"></canvas>
-                        </div>
-                    </div>
-                </section>
+
 
                 <!-- Information Section -->
                 <section class="mb-16">
@@ -276,71 +236,6 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
-
-        // Initialize Chart
-        const ctx = document.getElementById('weightChart').getContext('2d');
-        let weightChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['6:00', '8:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00'],
-                datasets: [{
-                    label: 'Gewicht (kg)',
-                    data: [34.5, 34.8, 35.2, 35.4, 35.7, 35.9, 36.1, 36.3],
-                    borderColor: '#d97706',
-                    backgroundColor: 'rgba(217, 119, 6, 0.1)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        title: {
-                            display: true,
-                            text: 'Gewicht (kg)'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Uhrzeit'
-                        }
-                    }
-                }
-            }
-        });
-
-        // Update Chart Data
-        function updateChart(timeframe) {
-            let labels, data;
-            
-            switch(timeframe) {
-                case 'day':
-                    labels = ['6:00', '8:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00'];
-                    data = [34.5, 34.8, 35.2, 35.4, 35.7, 35.9, 36.1, 36.3];
-                    break;
-                case 'week':
-                    labels = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
-                    data = [33.8, 34.2, 34.7, 35.1, 35.4, 35.7, 36.3];
-                    break;
-                case 'month':
-                    labels = ['1.', '5.', '10.', '15.', '20.', '25.', '30.'];
-                    data = [32.5, 33.1, 33.8, 34.4, 35.0, 35.7, 36.3];
-                    break;
-            }
-
-            weightChart.data.labels = labels;
-            weightChart.data.datasets[0].data = data;
-            weightChart.update();
-        }
     </script>
 </body>
 </html> 

@@ -30,11 +30,10 @@
 
                     <!-- Desktop Navigation -->
                     <ul class="hidden md:flex space-x-6">
-                        <li><a href="/" class="nav-link">Startseite</a></li>
                         <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
                         <li><a href="/termine.html" class="nav-link">Termine</a></li>
                         <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
-                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/infos.html" class="nav-link active">Infos</a></li>
                         <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
                         <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
                         <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
@@ -44,14 +43,13 @@
                 <!-- Mobile Navigation -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <ul class="py-4">
-                        <li><a href="/" class="block py-2">Startseite</a></li>
-                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
-                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
-                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
-                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
-                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link active block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,47 +63,90 @@
                 <section class="mb-16">
                     <h2 class="text-3xl font-bold mb-8 text-center">Allgemeine Infos</h2>
                     
-                    <!-- Mitglied werden -->
-                    <div class="card p-6 hover-grow fade-in mb-8">
-                        <div class="flex items-center mb-4">
-                            <i data-feather="users" class="text-amber-500 w-8 h-8 mr-3"></i>
-                            <h3 class="text-xl font-semibold">Mitglied werden</h3>
+                    <!-- Mitgliedschaft -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <!-- Vollmitglied -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="users" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Vollmitglied</h3>
+                            </div>
+                            <div class="text-gray-700 space-y-3">
+                                <p>Werden Sie aktiver Teil unserer Imkergemeinschaft!</p>
+                                <ul class="space-y-2 ml-4">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span><strong>Jahresbeitrag:</strong> 10€ + LHI/DIB-Beiträge</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span><strong>Jugendliche:</strong> Beitragsfrei + 15€ LHI</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Versicherung über LHI</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Zugang zu Vereinsgerätschaften</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Vergünstigte Kurse und Veranstaltungen</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Fachliche Beratung und Unterstützung</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="text-gray-700 space-y-3">
-                            <p>Werden Sie Teil unserer Imkergemeinschaft und profitieren Sie von unserem Wissen und unserer Erfahrung!</p>
-                            <ul class="space-y-2 ml-4">
-                                <li class="flex items-center">
-                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
-                                    <span><strong>Jahresbeitrag:</strong> 30€ für Erwachsene</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
-                                    <span><strong>Jugendliche (bis 18 Jahre):</strong> Beitragsfrei</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
-                                    <span>Zugang zu Vereinsgerätschaften</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
-                                    <span>Vergünstigte Kurse und Veranstaltungen</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
-                                    <span>Fachliche Beratung und Unterstützung</span>
-                                </li>
-                            </ul>
+
+                        <!-- Fördermitglied -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="heart" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Fördermitglied</h3>
+                            </div>
+                            <div class="text-gray-700 space-y-3">
+                                <p>Unterstützen Sie unsere Arbeit für Bienen und Natur!</p>
+                                <ul class="space-y-2 ml-4">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span><strong>Jahresbeitrag:</strong> 10€</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Teilnahme an Veranstaltungen</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Regelmäßige Informationen</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 w-4 h-4 mr-2"></i>
+                                        <span>Förderung des Natur- und Umweltschutzes</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Downloads -->
-                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- Downloads, Links und Literatur -->
+                    <div class="grid md:grid-cols-3 gap-8 mb-8">
                         <div class="card p-6 hover-grow fade-in">
                             <div class="flex items-center mb-4">
                                 <i data-feather="download" class="text-amber-500 w-8 h-8 mr-3"></i>
                                 <h3 class="text-xl font-semibold">Downloads</h3>
                             </div>
                             <ul class="space-y-4">
+                                <li>
+                                    <a href="Beitragsübersicht_2025.pdf" class="flex items-center text-gray-700 hover:text-amber-600 group">
+                                        <i data-feather="file-text" class="w-5 h-5 mr-2 group-hover:text-amber-600"></i>
+                                        <span class="flex-1">Beitragsübersicht 2025</span>
+                                        <span class="text-sm text-gray-500 ml-2">(PDF)</span>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="#" class="flex items-center text-gray-700 hover:text-amber-600 group">
                                         <i data-feather="file-text" class="w-5 h-5 mr-2 group-hover:text-amber-600"></i>
@@ -168,6 +209,40 @@
                                 </li>
                             </ul>
                         </div>
+
+                        <!-- Literaturempfehlungen -->
+                        <div class="card p-6 hover-grow fade-in">
+                            <div class="flex items-center mb-4">
+                                <i data-feather="book" class="text-amber-500 w-8 h-8 mr-3"></i>
+                                <h3 class="text-xl font-semibold">Literaturempfehlungen</h3>
+                            </div>
+                            <ul class="space-y-3 text-sm">
+                                <li class="border-b pb-2">
+                                    <p class="font-semibold">Einfach Imkern</p>
+                                    <p class="text-gray-600">Autor: Gerhard Liebig</p>
+                                    <p class="text-gray-500">Verlag: Eigenverlag</p>
+                                    <p class="text-gray-400">ISBN: 978-3-9806166-5-5</p>
+                                </li>
+                                <li class="border-b pb-2">
+                                    <p class="font-semibold">Phänomen Honigbiene</p>
+                                    <p class="text-gray-600">Autor: Jürgen Tautz</p>
+                                    <p class="text-gray-500">Verlag: Spektrum</p>
+                                    <p class="text-gray-400">ISBN: 978-3-8274-2683-4</p>
+                                </li>
+                                <li class="border-b pb-2">
+                                    <p class="font-semibold">Varroose - Erkennen und erfolgreich bekämpfen</p>
+                                    <p class="text-gray-600">Autor: Dr. Friedrich Pohl</p>
+                                    <p class="text-gray-500">Verlag: Kosmos</p>
+                                    <p class="text-gray-400">ISBN: 978-3-440-15080-0</p>
+                                </li>
+                                <li>
+                                    <p class="font-semibold">Der Wochenend-Imker</p>
+                                    <p class="text-gray-600">Autor: Karl Weiß</p>
+                                    <p class="text-gray-500">Verlag: Kosmos</p>
+                                    <p class="text-gray-400">ISBN: 978-3-440-15313-9</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
@@ -180,12 +255,12 @@
                             <h3 class="text-xl font-semibold">Terminvorschau</h3>
                         </div>
                         <p class="text-gray-700 mb-4">
-                            Hier finden Sie eine Übersicht über die kommenden Termine und Veranstaltungen der nächsten Monate.
+                            Die Terminübersicht finden Sie auf unserer Termine-Seite mit allen kommenden Veranstaltungen der nächsten Monate.
                         </p>
                         <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
                             <p class="text-sm text-amber-800 flex items-center">
                                 <i data-feather="info" class="w-4 h-4 mr-2"></i>
-                                Die detaillierte Terminübersicht finden Sie auf unserer <a href="/termine.html" class="text-amber-600 hover:text-amber-700 underline">Termine-Seite</a>.
+                                Die Terminübersicht finden Sie auf unserer <a href="/termine.html" class="text-amber-600 hover:text-amber-700 underline">Termine-Seite</a>.
                             </p>
                         </div>
                     </div>
@@ -208,9 +283,13 @@
                             <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-gray-800 mb-2">Kontakt:</h4>
                                 <p class="text-gray-700">
-                                    <strong>Max Mustermann</strong><br>
+                                    <strong>Dr. Wilhelm Schuy</strong><br>
                                     Tel: 06433 / 123456<br>
-                                    E-Mail: berater@imkerverein-hadamar.de
+                                    E-Mail: berater@imkerverein-hadamar.de<br>
+                                    <br>
+                                    <strong>Dr. Gerhard Balser</strong><br>
+                                    Tel: 06433 / 234567<br>
+                                    E-Mail: berater2@imkerverein-hadamar.de
                                 </p>
                             </div>
                         </div>
@@ -228,9 +307,13 @@
                             <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-gray-800 mb-2">Kontakt:</h4>
                                 <p class="text-gray-700">
-                                    <strong>Dr. Maria Musterfrau</strong><br>
+                                    <strong>Peter Stecker</strong><br>
                                     Tel: 06433 / 654321<br>
-                                    E-Mail: sachverstaendige@imkerverein-hadamar.de
+                                    E-Mail: sachverstaendige@imkerverein-hadamar.de<br>
+                                    <br>
+                                    <strong>Dr. Wilhelm Schuy</strong><br>
+                                    Tel: 06433 / 123456<br>
+                                    E-Mail: sachverstaendige2@imkerverein-hadamar.de
                                 </p>
                             </div>
                         </div>
@@ -242,7 +325,7 @@
         <!-- Footer -->
         <footer class="bg-amber-100 py-8 mt-12">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Über uns</h4>
                         <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
@@ -262,20 +345,9 @@
                             <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
-                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>

@@ -8,26 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        /* Custom styles can be added here if needed */
-        body {
-            background-color: #f0f4f8; /* A light blue-gray background for the whole page */
-        }
-        .banner {
-            background-color: #fde68a; /* amber-200 */
-        }
-        .nav-bar {
-             background-color: #fde68a; /* amber-200 */
-        }
-        .main-content {
-            background-color: #ffffff;
-        }
-        .footer {
-            background-color: #fde68a; /* amber-200 */
-        }
-    </style>
 </head>
-<body class="font-sans">
+<body class="font-sans bg-amber-50">
     <div class="min-h-screen flex flex-col">
         <!-- Header with Navigation -->
         <header class="relative bg-amber-100">
@@ -40,7 +22,7 @@
                             <span class="inline-block">Hadamar-Dornburg</span>
                         </span>
                     </a>
-                    
+
                     <!-- Mobile Menu Button -->
                     <button class="md:hidden" id="mobile-menu-button">
                         <i data-feather="menu"></i>
@@ -48,7 +30,6 @@
 
                     <!-- Desktop Navigation -->
                     <ul class="hidden md:flex space-x-6">
-                        <li><a href="/" class="nav-link">Startseite</a></li>
                         <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
                         <li><a href="/termine.html" class="nav-link">Termine</a></li>
                         <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
@@ -62,94 +43,242 @@
                 <!-- Mobile Navigation -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <ul class="py-4">
-                        <li><a href="/" class="block py-2">Startseite</a></li>
-                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
-                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
-                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
-                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
-                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </header>
 
-        <main class="flex-grow">
-            <!-- Page Header -->
-            <section class="bg-amber-50 py-8">
-                <div class="container mx-auto px-4">
-                    <h1 class="text-3xl font-bold text-gray-800">Datenschutzerklärung</h1>
-                </div>
-            </section>
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-8 text-center">Datenschutzerklärung</h1>
 
-            <!-- Content Section -->
-            <section class="py-8">
-                <div class="container mx-auto px-4">
-                    <div class="bg-white rounded-lg shadow-md p-8">
-                        <div class="prose max-w-none text-gray-700 space-y-6">
-                            <div class="card p-6 hover-grow">
-                                <div class="flex items-center mb-4">
-                                    <i data-feather="shield" class="text-amber-500 mr-2"></i>
-                                    <h2 class="text-xl font-semibold">Allgemeiner Hinweis und verantwortliche Stelle</h2>
-                                </div>
-                                <p class="mb-6">
-                                    Hier wird die Datenschutzerklärung des Vereins stehen. Es ist wichtig, eine umfassende und rechtssichere Erklärung zu erstellen, die alle Aspekte der Datenerhebung und -verarbeitung auf der Website abdeckt.
-                                </p>
-                            </div>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Einleitung -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="info" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            1. Datenschutz auf einen Blick
+                        </h2>
 
-                            <div class="card p-6 hover-grow">
-                                <div class="flex items-center mb-4">
-                                    <i data-feather="list" class="text-amber-500 mr-2"></i>
-                                    <h2 class="text-xl font-semibold">Inhaltsübersicht</h2>
-                                </div>
-                                <ul class="list-disc list-inside space-y-3">
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Allgemeiner Hinweis und verantwortliche Stelle</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Ihre Rechte als betroffene Person</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Datenerfassung auf dieser Website (Cookies, Server-Log-Dateien, Kontaktformular etc.)</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Analyse-Tools und Werbung</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Newsletterdaten</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <i data-feather="check-circle" class="text-amber-500 w-4 h-4"></i>
-                                        <span>Plugins und Tools (z.B. Google Maps, YouTube)</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Allgemeine Hinweise</h3>
+                        <p class="text-gray-700 mb-4">
+                            Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                        </p>
 
-                            <div class="card p-6 hover-grow">
-                                <div class="flex items-center mb-4">
-                                    <i data-feather="alert-triangle" class="text-amber-500 mr-2"></i>
-                                    <h2 class="text-xl font-semibold">Wichtiger Hinweis</h2>
-                                </div>
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Datenerfassung auf dieser Website</h3>
+                        <p class="text-gray-700 mb-2">
+                            <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong>
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+                        </p>
+
+                        <p class="text-gray-700 mb-2">
+                            <strong>Wie erfassen wir Ihre Daten?</strong>
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                        </p>
+
+                        <p class="text-gray-700 mb-2">
+                            <strong>Wofür nutzen wir Ihre Daten?</strong>
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+                        </p>
+                    </div>
+
+                    <!-- Verantwortliche Stelle -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="user" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            2. Hinweis zur verantwortlichen Stelle
+                        </h2>
+                        <p class="text-gray-700 mb-4">
+                            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+                        </p>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <p class="text-gray-700">
+                                <strong>Imkerverein Hadamar-Dornburg e.V.</strong><br>
+                                Michael Stahl (1. Vorsitzender)<br>
+                                65589 Hadamar<br>
+                                Deutschland<br><br>
+                                Telefon: 06433 / 9490139<br>
+                                E-Mail: info@imkerverein-hadamar-dornburg.de
+                            </p>
+                        </div>
+                        <p class="text-gray-700 mt-4">
+                            Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+                        </p>
+                    </div>
+
+                    <!-- Ihre Rechte -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="shield" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            3. Ihre Rechte als betroffene Person
+                        </h2>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Auskunft, Berichtigung und Löschung</h3>
+                        <p class="text-gray-700 mb-4">
+                            Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Recht auf Einschränkung der Verarbeitung</h3>
+                        <p class="text-gray-700 mb-4">
+                            Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Recht auf Datenübertragbarkeit</h3>
+                        <p class="text-gray-700 mb-4">
+                            Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+                        <p class="text-gray-700 mb-4">
+                            Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+                        <p class="text-gray-700 mb-4">
+                            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu. Die zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem unser Verein seinen Sitz hat.
+                        </p>
+                    </div>
+
+                    <!-- Datenerfassung auf dieser Website -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="database" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            4. Datenerfassung auf dieser Website
+                        </h2>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Server-Log-Dateien</h3>
+                        <p class="text-gray-700 mb-4">
+                            Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Browsertyp und Browserversion</li>
+                            <li>Verwendetes Betriebssystem</li>
+                            <li>Referrer URL</li>
+                            <li>Hostname des zugreifenden Rechners</li>
+                            <li>Uhrzeit der Serveranfrage</li>
+                            <li>IP-Adresse</li>
+                        </ul>
+                        <p class="text-gray-700 mb-4">
+                            Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Kontaktformular</h3>
+                        <p class="text-gray-700 mb-4">
+                            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Anfrage per E-Mail oder Telefon</h3>
+                        <p class="text-gray-700 mb-4">
+                            Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
+                        </p>
+                    </div>
+
+                    <!-- Externe Dienste -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="globe" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            5. Externe Dienste und Inhalte
+                        </h2>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Google Maps</h3>
+                        <p class="text-gray-700 mb-4">
+                            Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google:
+                            <a href="https://policies.google.com/privacy?hl=de" target="_blank" class="text-amber-600 hover:text-amber-700">
+                                https://policies.google.com/privacy?hl=de
+                            </a>
+                        </p>
+
+                        <h3 class="text-xl font-semibold mb-2 mt-4">Externe Einbettungen (Wolf-Waagen Widget)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Auf unserer Stockwaage-Seite binden wir ein Widget der Firma Wolf-Waagen ein, um aktuelle Messwerte anzuzeigen. Bei der Nutzung dieser Seite werden Daten an die Server von Wolf-Waagen übertragen. Dies umfasst technische Daten wie Ihre IP-Adresse.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Die Einbindung erfolgt auf Grundlage unseres berechtigten Interesses an der Information unserer Mitglieder und Besucher über die aktuellen Messwerte unserer Stockwaage (Art. 6 Abs. 1 lit. f DSGVO).
+                        </p>
+                    </div>
+
+                    <!-- SSL-Verschlüsselung -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="lock" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            6. SSL- bzw. TLS-Verschlüsselung
+                        </h2>
+                        <p class="text-gray-700 mb-4">
+                            Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                        </p>
+                        <p class="text-gray-700">
+                            Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+                        </p>
+                    </div>
+
+                    <!-- Änderungen -->
+                    <div class="card p-6">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i data-feather="edit" class="w-6 h-6 mr-2 text-amber-500"></i>
+                            7. Änderung dieser Datenschutzerklärung
+                        </h2>
+                        <p class="text-gray-700 mb-4">
+                            Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Stand:</strong> Dezember 2024
+                        </p>
+                    </div>
+
+                    <!-- Wichtiger Hinweis -->
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8">
+                        <div class="flex items-start">
+                            <i data-feather="alert-triangle" class="w-6 h-6 mr-3 text-amber-600 flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h3 class="text-lg font-semibold text-amber-800 mb-2">Wichtiger Hinweis</h3>
                                 <p class="text-gray-700">
-                                    Bitte lassen Sie diesen Text von einem Experten für Datenschutzrecht erstellen oder prüfen.
+                                    Diese Datenschutzerklärung ist ein Entwurf und sollte von einem Fachanwalt für Datenschutzrecht oder einem Datenschutzbeauftragten geprüft und ggf. angepasst werden, um sicherzustellen, dass sie allen rechtlichen Anforderungen entspricht und auf Ihre spezifische Situation zugeschnitten ist.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- Footer -->
-        <footer class="bg-amber-100 py-8">
+        <footer class="bg-amber-100 py-8 mt-12">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Über uns</h4>
                         <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
@@ -169,26 +298,14 @@
                             <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
-                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
     </div>
 
-    <script src="js/main.js"></script>
     <script>
         // Initialize Feather Icons
         feather.replace();
@@ -199,4 +316,4 @@
         });
     </script>
 </body>
-</html> 
+</html>

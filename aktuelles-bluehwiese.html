@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue Blühwiese angelegt - Imkerverein Hadamar-Dornburg e.V.</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans bg-amber-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-amber-100">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex items-center justify-between">
+                    <a href="/" class="flex items-center space-x-2">
+                        <img src="img/favicon.svg" alt="Logo" class="w-10 h-10">
+                        <span class="text-xl font-bold text-gray-800">
+                            <span class="inline-block">Imkerverein</span>
+                            <span class="inline-block">Hadamar-Dornburg</span>
+                        </span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden md:flex space-x-6">
+                        <li><a href="/aktuelles.html" class="nav-link active">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <ul class="py-4">
+                        <li><a href="/aktuelles.html" class="nav-link active block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow py-12">
+            <div class="container mx-auto px-4">
+                <!-- Back Button -->
+                <a href="/aktuelles.html" class="inline-flex items-center text-amber-600 hover:text-amber-700 mb-6">
+                    <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i>
+                    Zurück zu Aktuelles
+                </a>
+
+                <!-- Article Header -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <header class="p-8">
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <i data-feather="calendar" class="w-5 h-5 mr-2"></i>
+                            <span>15. März 2024</span>
+                            <span class="mx-3">•</span>
+                            <i data-feather="user" class="w-5 h-5 mr-2"></i>
+                            <span>Michael Stahl</span>
+                        </div>
+                        <h1 class="text-4xl font-bold mb-4">Neue Blühwiese angelegt</h1>
+                        <p class="text-xl text-gray-700">
+                            Gemeinsam mit der Gemeinde Hadamar haben wir eine neue Blühwiese angelegt, die Bienen und anderen Insekten einen wertvollen Lebensraum bietet.
+                        </p>
+                    </header>
+
+                    <!-- Hero Image -->
+                    <div class="px-8 pb-8">
+                        <img src="img/Bilder/Bluehwiese.jpg"
+                             alt="Neue Blühwiese in Hadamar"
+                             class="w-full rounded-lg shadow-md">
+                    </div>
+
+                    <!-- Article Content -->
+                    <div class="px-8 pb-8">
+                        <div class="prose prose-lg max-w-none">
+                            <h2 class="text-2xl font-bold mb-4 mt-8">Ein wichtiger Beitrag zum Artenschutz</h2>
+                            <p class="text-gray-700 mb-6">
+                                Am vergangenen Samstag, dem 15. März 2024, haben Mitglieder unseres Imkervereins gemeinsam mit der Gemeinde Hadamar und
+                                zahlreichen freiwilligen Helfern eine neue Blühwiese von etwa 3.000 Quadratmetern angelegt. Diese Initiative ist ein
+                                wichtiger Baustein in unserem Engagement für den Erhalt der Artenvielfalt in unserer Region.
+                            </p>
+
+                            <h2 class="text-2xl font-bold mb-4 mt-8">Die richtige Saatmischung macht den Unterschied</h2>
+                            <p class="text-gray-700 mb-6">
+                                Für die Blühwiese wurde eine spezielle regionale Saatgutmischung verwendet, die optimal auf die Bedürfnisse heimischer
+                                Insekten abgestimmt ist. Die Mischung enthält über 40 verschiedene Wildblumenarten, darunter Kornblume, Klatschmohn,
+                                Wilde Möhre, Schafgarbe und verschiedene Kleearten. Diese Vielfalt garantiert ein durchgehendes Blühangebot von Mai bis
+                                Oktober und bietet damit Nahrung für Wildbienen, Honigbienen, Schmetterlinge und viele andere Insekten.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6 my-8">
+                                <img src="img/Bilder/20240716_183754.jpg"
+                                     alt="Aussaat der Blühwiese"
+                                     class="w-full rounded-lg shadow-md">
+                                <img src="img/Bilder/20240716_192440.jpg"
+                                     alt="Freiwillige Helfer bei der Arbeit"
+                                     class="w-full rounded-lg shadow-md">
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-4 mt-8">Gemeinschaftliches Engagement</h2>
+                            <p class="text-gray-700 mb-6">
+                                Die Aktion war ein voller Erfolg dank der tatkräftigen Unterstützung von über 30 Freiwilligen. Bürgermeister Michael Ruoff
+                                betonte bei der Eröffnung: "Diese Blühwiese ist ein wunderbares Beispiel dafür, was wir gemeinsam für unsere Umwelt erreichen
+                                können. Sie wird nicht nur unseren Bienen helfen, sondern auch das Ortsbild verschönern und die Biodiversität in unserer
+                                Gemeinde fördern."
+                            </p>
+
+                            <p class="text-gray-700 mb-6">
+                                Unser Vereinsvorsitzender Michael Stahl ergänzte: "Als Imker sehen wir tagtäglich, wie wichtig ein vielfältiges Blühangebot
+                                für unsere Bienen ist. Diese Blühwiese ist ein wichtiger Schritt, aber wir hoffen, dass dies nur der Anfang ist und weitere
+                                Flächen folgen werden."
+                            </p>
+
+                            <h2 class="text-2xl font-bold mb-4 mt-8">Langfristige Pflege gesichert</h2>
+                            <p class="text-gray-700 mb-6">
+                                Die Pflege der Blühwiese wird gemeinsam von der Gemeinde und unserem Verein übernommen. Ein speziell entwickeltes
+                                Pflegekonzept sieht vor, dass die Wiese nur zweimal jährlich gemäht wird, wobei immer Teilbereiche stehen bleiben,
+                                um Überwinterungsmöglichkeiten für Insekten zu bieten. Außerdem werden regelmäßig Führungen und Informationsveranstaltungen
+                                an der Blühwiese stattfinden, um die Bevölkerung für das Thema Insektenschutz zu sensibilisieren.
+                            </p>
+
+                            <div class="bg-amber-50 p-6 rounded-lg my-8">
+                                <h3 class="text-xl font-bold mb-3">Machen Sie mit!</h3>
+                                <p class="text-gray-700 mb-4">
+                                    Auch Sie können einen Beitrag zum Insektenschutz leisten. Selbst kleine Blühflächen im eigenen Garten oder auf dem
+                                    Balkon helfen unseren Bestäubern. Gerne beraten wir Sie bei der Auswahl geeigneter Pflanzen und Saatmischungen.
+                                </p>
+                                <p class="text-gray-700">
+                                    <strong>Kontakt für Beratung:</strong><br>
+                                    Dr. Wilhelm Schuy (Imkerberater)<br>
+                                    Telefon: 06433 / 123456<br>
+                                    E-Mail: beratung@imkerverein-hadamar-dornburg.de
+                                </p>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-4 mt-8">Weiterführende Informationen</h2>
+                            <div class="space-y-4">
+                                <a href="https://www.bienenkunde.rlp.de/Bienenkunde/Bluehflaechen"
+                                   target="_blank"
+                                   class="flex items-center text-amber-600 hover:text-amber-700">
+                                    <i data-feather="external-link" class="w-5 h-5 mr-2"></i>
+                                    Informationen zu Blühflächen vom Bieneninstitut Mayen
+                                </a>
+
+                                <a href="#"
+                                   class="inline-flex items-center px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-colors">
+                                    <i data-feather="download" class="w-5 h-5 mr-2"></i>
+                                    PDF-Broschüre "Blühwiesen anlegen" herunterladen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share Section -->
+                    <footer class="px-8 pb-8 border-t pt-8">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold mb-2">Artikel teilen:</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-amber-600">
+                                        <i data-feather="facebook" class="w-6 h-6"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-amber-600">
+                                        <i data-feather="twitter" class="w-6 h-6"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-amber-600">
+                                        <i data-feather="mail" class="w-6 h-6"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="/aktuelles.html" class="inline-flex items-center text-amber-600 hover:text-amber-700">
+                                Zurück zu allen Nachrichten
+                                <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amber-100 text-gray-700 py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+                    <!-- Contact Info -->
+                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                        <h3 class="font-bold text-lg mb-2">Kontakt</h3>
+                        <p>Imkerverein Hadamar-Dornburg e.V.</p>
+                        <p>E-Mail: info@imkerverein-hadamar-dornburg.de</p>
+                        <p>Tel: 06433 / 123456</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                        <h3 class="font-bold text-lg mb-2">Schnellzugriff</h3>
+                        <ul>
+                            <li><a href="/impressum.html" class="hover:text-amber-600">Impressum</a></li>
+                            <li><a href="/datenschutz.html" class="hover:text-amber-600">Datenschutz</a></li>
+                            <li><a href="/kontakt.html" class="hover:text-amber-600">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr class="my-6 border-amber-200">
+
+                <p class="text-center text-sm">
+                    &copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace()
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -44,9 +44,8 @@
 
                     <!-- Desktop Navigation -->
                     <ul class="hidden md:flex space-x-6">
-                        <li><a href="/" class="nav-link">Startseite</a></li>
                         <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="nav-link">Termine</a></li>
+                        <li><a href="/termine.html" class="nav-link active">Termine</a></li>
                         <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
                         <li><a href="/infos.html" class="nav-link">Infos</a></li>
                         <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
@@ -58,14 +57,13 @@
                 <!-- Mobile Navigation -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <ul class="py-4">
-                        <li><a href="/" class="block py-2">Startseite</a></li>
-                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
-                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
-                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
-                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
-                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link active block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,102 +75,20 @@
 
                 <!-- Calendar Navigation -->
                 <div class="flex justify-between items-center mb-8">
-                    <button class="btn btn-primary">
+                    <button id="prevMonth" class="btn btn-primary flex items-center">
                         <i data-feather="chevron-left" class="w-4 h-4 mr-2"></i>
-                        März 2024
+                        <span id="prevMonthText">Vorheriger Monat</span>
                     </button>
-                    <h2 class="text-2xl font-semibold">April 2024</h2>
-                    <button class="btn btn-primary">
-                        Mai 2024
+                    <h2 id="currentMonth" class="text-2xl font-semibold">Aktueller Monat</h2>
+                    <button id="nextMonth" class="btn btn-primary flex items-center">
+                        <span id="nextMonthText">Nächster Monat</span>
                         <i data-feather="chevron-right" class="w-4 h-4 ml-2"></i>
                     </button>
                 </div>
 
                 <!-- Events List -->
-                <div class="space-y-6">
-                    <!-- Regular Event -->
-                    <div class="card p-6 hover-grow fade-in">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-16 text-center">
-                                <div class="text-2xl font-bold text-amber-600">05</div>
-                                <div class="text-gray-600">Apr</div>
-                            </div>
-                            <div class="flex-grow">
-                                <h3 class="text-xl font-semibold mb-2">Monatlicher Imkerstammtisch</h3>
-                                <div class="flex items-center text-gray-600 mb-2">
-                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
-                                    19:00 Uhr
-                                </div>
-                                <div class="flex items-center text-gray-600 mb-4">
-                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
-                                    Gasthaus "Zur Biene", Hadamar
-                                </div>
-                                <p class="text-gray-700">
-                                    Unser monatlicher Stammtisch für Erfahrungsaustausch und gemütliches Beisammensein.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Workshop Event -->
-                    <div class="card p-6 hover-grow fade-in">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-16 text-center">
-                                <div class="text-2xl font-bold text-amber-600">13</div>
-                                <div class="text-gray-600">Apr</div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex items-center space-x-2 mb-2">
-                                    <h3 class="text-xl font-semibold">Workshop: Frühjahrsrevision</h3>
-                                    <span class="bg-amber-100 text-amber-800 text-sm px-2 py-1 rounded">Workshop</span>
-                                </div>
-                                <div class="flex items-center text-gray-600 mb-2">
-                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
-                                    10:00 - 14:00 Uhr
-                                </div>
-                                <div class="flex items-center text-gray-600 mb-4">
-                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
-                                    Vereinsbienenstand
-                                </div>
-                                <p class="text-gray-700 mb-4">
-                                    Praktischer Workshop zur Durchführung der Frühjahrsrevision. Bitte Schutzkleidung mitbringen.
-                                </p>
-                                <button class="btn btn-primary">
-                                    Jetzt anmelden
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Field Trip Event -->
-                    <div class="card p-6 hover-grow fade-in">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-16 text-center">
-                                <div class="text-2xl font-bold text-amber-600">20</div>
-                                <div class="text-gray-600">Apr</div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex items-center space-x-2 mb-2">
-                                    <h3 class="text-xl font-semibold">Exkursion: Blühwiesen</h3>
-                                    <span class="bg-lime-100 text-lime-800 text-sm px-2 py-1 rounded">Exkursion</span>
-                                </div>
-                                <div class="flex items-center text-gray-600 mb-2">
-                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
-                                    14:00 - 16:00 Uhr
-                                </div>
-                                <div class="flex items-center text-gray-600 mb-4">
-                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
-                                    Treffpunkt: Parkplatz Rathaus
-                                </div>
-                                <p class="text-gray-700 mb-4">
-                                    Gemeinsame Besichtigung der neu angelegten Blühwiesen mit fachkundiger Führung.
-                                </p>
-                                <button class="btn btn-primary">
-                                    Teilnehmen
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div id="eventsList" class="space-y-6">
+                    <!-- Events will be loaded dynamically here -->
                 </div>
 
                 <!-- Download Calendar -->
@@ -188,7 +104,7 @@
         <!-- Footer -->
         <footer class="bg-amber-100 py-8 mt-12">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Über uns</h4>
                         <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
@@ -208,20 +124,9 @@
                             <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
-                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
@@ -235,6 +140,217 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+
+        // Calendar functionality
+        const months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+                       'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+
+        let currentDate = new Date();
+        let displayMonth = currentDate.getMonth();
+        let displayYear = currentDate.getFullYear();
+
+        // Function to get second Wednesday of a month
+        function getSecondWednesday(year, month) {
+            const firstDay = new Date(year, month, 1);
+            const firstDayOfWeek = firstDay.getDay();
+            // Calculate days until first Wednesday (3 = Wednesday)
+            const daysUntilWednesday = (3 - firstDayOfWeek + 7) % 7;
+            // First Wednesday
+            const firstWednesday = 1 + daysUntilWednesday;
+            // Second Wednesday is 7 days later
+            const secondWednesday = firstWednesday + 7;
+            return secondWednesday;
+        }
+
+        // Sample events for demonstration
+        function getEventsForMonth(year, month) {
+            const events = [];
+
+            // Always add Stammtisch on second Wednesday
+            const stammtischDay = getSecondWednesday(year, month);
+            events.push({
+                day: stammtischDay,
+                title: 'Monatlicher Imkerstammtisch',
+                type: 'Stammtisch',
+                typeColor: 'blue',
+                time: '19:00 Uhr',
+                location: 'Gasthaus \'Jägersruh\', Thalheim',
+                locationLink: 'https://maps.google.com/?q=Gasthaus+Jägersruh+Thalheim',
+                description: 'Jeden zweiten Mittwoch im Monat - Erfahrungsaustausch und gemütliches Beisammensein.'
+            });
+
+            // Add some sample events for certain months
+            if (month === 3) { // April
+                events.push({
+                    day: 13,
+                    title: 'Workshop: Frühjahrsrevision',
+                    type: 'Workshop',
+                    typeColor: 'amber',
+                    time: '10:00 - 14:00 Uhr',
+                    location: 'Vereinsbienenstand',
+                    description: 'Praktischer Workshop zur Durchführung der Frühjahrsrevision. Bitte Schutzkleidung mitbringen.',
+                    hasButton: true,
+                    buttonText: 'Jetzt anmelden'
+                });
+                events.push({
+                    day: 20,
+                    title: 'Exkursion: Blühwiesen',
+                    type: 'Exkursion',
+                    typeColor: 'lime',
+                    time: '14:00 - 16:00 Uhr',
+                    location: 'Treffpunkt: Parkplatz Rathaus',
+                    description: 'Gemeinsame Besichtigung der neu angelegten Blühwiesen mit fachkundiger Führung.',
+                    hasButton: true,
+                    buttonText: 'Teilnehmen'
+                });
+            }
+
+            if (month === 6) { // Juli
+                events.push({
+                    day: 15,
+                    title: 'Sommerfest',
+                    type: 'Fest',
+                    typeColor: 'pink',
+                    time: '14:00 - 20:00 Uhr',
+                    location: 'Vereinsgelände',
+                    description: 'Unser jährliches Sommerfest mit Honigverkostung und Kinderprogramm.'
+                });
+            }
+
+            if (month === 11) { // Dezember
+                events.push({
+                    day: 7,
+                    title: 'Weihnachtsfeier',
+                    type: 'Feier',
+                    typeColor: 'red',
+                    time: '18:00 Uhr',
+                    location: 'Gasthaus \'Jägersruh\', Thalheim',
+                    locationLink: 'https://maps.google.com/?q=Gasthaus+Jägersruh+Thalheim',
+                    description: 'Gemütlicher Jahresausklang mit Rückblick und Ausblick aufs neue Jahr.'
+                });
+            }
+
+            // Sort events by day
+            return events.sort((a, b) => a.day - b.day);
+        }
+
+        function renderEvents() {
+            const monthName = months[displayMonth];
+            const monthShort = monthName.substring(0, 3);
+            const events = getEventsForMonth(displayYear, displayMonth);
+            const eventsList = document.getElementById('eventsList');
+
+            // Update navigation
+            document.getElementById('currentMonth').textContent = `${monthName} ${displayYear}`;
+
+            const prevMonth = displayMonth === 0 ? 11 : displayMonth - 1;
+            const prevYear = displayMonth === 0 ? displayYear - 1 : displayYear;
+            document.getElementById('prevMonthText').textContent = `${months[prevMonth]} ${prevYear}`;
+
+            const nextMonth = displayMonth === 11 ? 0 : displayMonth + 1;
+            const nextYear = displayMonth === 11 ? displayYear + 1 : displayYear;
+            document.getElementById('nextMonthText').textContent = `${months[nextMonth]} ${nextYear}`;
+
+            // Clear events
+            eventsList.innerHTML = '';
+
+            if (events.length === 0) {
+                eventsList.innerHTML = '<div class="text-center text-gray-600 py-8">Keine Termine für diesen Monat</div>';
+                return;
+            }
+
+            // Render each event
+            events.forEach(event => {
+                const eventHtml = `
+                    <div class="card p-6 hover-grow fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-16 text-center">
+                                <div class="text-2xl font-bold text-amber-600">${String(event.day).padStart(2, '0')}</div>
+                                <div class="text-gray-600">${monthShort}</div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <h3 class="text-xl font-semibold">${event.title}</h3>
+                                    <span class="bg-${event.typeColor}-100 text-${event.typeColor}-800 text-sm px-2 py-1 rounded">${event.type}</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i data-feather="clock" class="w-4 h-4 mr-2"></i>
+                                    ${event.time}
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                                    ${event.locationLink ?
+                                        `<a href="${event.locationLink}" target="_blank" class="text-amber-600 hover:text-amber-700">${event.location}</a>` :
+                                        event.location
+                                    }
+                                </div>
+                                <p class="text-gray-700">${event.description}</p>
+                                ${event.hasButton ? `
+                                    <button class="btn btn-primary mt-4">
+                                        ${event.buttonText}
+                                    </button>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                eventsList.innerHTML += eventHtml;
+            });
+
+            // Re-initialize feather icons for new elements
+            feather.replace();
+        }
+
+        // Check if we can navigate to previous month
+        function canNavigateToPrevious() {
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            const currentYear = today.getFullYear();
+
+            // Cannot go before current month
+            if (displayYear < currentYear) return false;
+            if (displayYear === currentYear && displayMonth <= currentMonth) return false;
+            return true;
+        }
+
+        // Update button states
+        function updateNavigationButtons() {
+            const prevButton = document.getElementById('prevMonth');
+            if (!canNavigateToPrevious()) {
+                prevButton.classList.add('opacity-50', 'cursor-not-allowed');
+                prevButton.disabled = true;
+            } else {
+                prevButton.classList.remove('opacity-50', 'cursor-not-allowed');
+                prevButton.disabled = false;
+            }
+        }
+
+        // Navigation buttons
+        document.getElementById('prevMonth').addEventListener('click', function() {
+            if (!canNavigateToPrevious()) return;
+
+            displayMonth--;
+            if (displayMonth < 0) {
+                displayMonth = 11;
+                displayYear--;
+            }
+            renderEvents();
+            updateNavigationButtons();
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', function() {
+            displayMonth++;
+            if (displayMonth > 11) {
+                displayMonth = 0;
+                displayYear++;
+            }
+            renderEvents();
+            updateNavigationButtons();
+        });
+
+        // Initial render
+        renderEvents();
+        updateNavigationButtons();
     </script>
 </body>
 </html> 

@@ -1,25 +1,25 @@
 // Seasonal Images Configuration
 const seasonalImages = {
     spring: {
-        path: 'img/seasons/spring.jpg',
+        path: 'img/Bilder/20240411_132433.jpg',
         alt: 'Frühlingsblüten mit Bienen',
         start: '03-20', // March 20
         end: '06-20'    // June 20
     },
     summer: {
-        path: 'img/seasons/summer.jpg',
+        path: 'img/Bilder/20240716_183732.jpg',
         alt: 'Sommerliche Bienenweide',
         start: '06-21', // June 21
         end: '09-21'    // September 21
     },
     autumn: {
-        path: 'img/seasons/autumn.jpg',
+        path: 'img/Bilder/20240708_163015.jpg',
         alt: 'Herbstliche Impression mit Bienen',
         start: '09-22', // September 22
         end: '12-20'    // December 20
     },
     winter: {
-        path: 'img/seasons/winter.jpg',
+        path: 'img/Bilder/20150814_202741.jpg',
         alt: 'Winterruhe im Bienenstock',
         start: '12-21', // December 21
         end: '03-19'    // March 19

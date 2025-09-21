@@ -57,7 +57,6 @@
 
                     <!-- Desktop Navigation -->
                     <ul class="hidden md:flex space-x-6">
-                        <li><a href="/" class="nav-link">Startseite</a></li>
                         <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
                         <li><a href="/termine.html" class="nav-link">Termine</a></li>
                         <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
@@ -71,14 +70,13 @@
                 <!-- Mobile Navigation -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <ul class="py-4">
-                        <li><a href="/" class="block py-2">Startseite</a></li>
-                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
-                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
-                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
-                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
-                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -114,10 +112,8 @@
                                 <i data-feather="calendar" class="text-amber-500 mr-2"></i>
                                 <h3 class="text-xl font-semibold">Nächster Termin</h3>
                             </div>
-                            <div class="text-gray-700">
-                                <p class="font-semibold">Monatlicher Imkerstammtisch</p>
-                                <p>Jeden ersten Freitag im Monat</p>
-                                <p>19:00 Uhr, Gasthaus "Zur Biene"</p>
+                            <div id="nextEventContent" class="text-gray-700">
+                                <p class="font-semibold">Wird geladen...</p>
                             </div>
                         </div>
 
@@ -155,7 +151,7 @@
         <!-- Footer -->
         <footer class="bg-amber-100 py-8">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Über uns</h4>
                         <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
@@ -175,20 +171,9 @@
                             <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
-                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
@@ -203,6 +188,84 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+
+        // Function to get second Wednesday of a month
+        function getSecondWednesday(year, month) {
+            const firstDay = new Date(year, month, 1);
+            const firstDayOfWeek = firstDay.getDay();
+            // Calculate days until first Wednesday (3 = Wednesday)
+            const daysUntilWednesday = (3 - firstDayOfWeek + 7) % 7;
+            // First Wednesday
+            const firstWednesday = 1 + daysUntilWednesday;
+            // Second Wednesday is 7 days later
+            const secondWednesday = firstWednesday + 7;
+            return secondWednesday;
+        }
+
+        // Function to get next event
+        function getNextEvent() {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            const currentMonth = today.getMonth();
+            const currentDay = today.getDate();
+
+            // Check this month's Stammtisch
+            const thisMonthStammtisch = getSecondWednesday(currentYear, currentMonth);
+
+            if (currentDay <= thisMonthStammtisch) {
+                // This month's Stammtisch hasn't happened yet
+                return {
+                    day: thisMonthStammtisch,
+                    month: currentMonth,
+                    year: currentYear,
+                    title: 'Monatlicher Imkerstammtisch',
+                    time: '19:00 Uhr',
+                    location: 'Gasthaus \'Jägersruh\', Thalheim'
+                };
+            } else {
+                // Next month's Stammtisch
+                let nextMonth = currentMonth + 1;
+                let nextYear = currentYear;
+
+                if (nextMonth > 11) {
+                    nextMonth = 0;
+                    nextYear++;
+                }
+
+                const nextMonthStammtisch = getSecondWednesday(nextYear, nextMonth);
+
+                return {
+                    day: nextMonthStammtisch,
+                    month: nextMonth,
+                    year: nextYear,
+                    title: 'Monatlicher Imkerstammtisch',
+                    time: '19:00 Uhr',
+                    location: 'Gasthaus \'Jägersruh\', Thalheim'
+                };
+            }
+        }
+
+        // Display next event
+        function displayNextEvent() {
+            const event = getNextEvent();
+            const monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+                              'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+
+            const eventDate = new Date(event.year, event.month, event.day);
+            const weekdays = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+            const weekday = weekdays[eventDate.getDay()];
+
+            const nextEventContent = document.getElementById('nextEventContent');
+            nextEventContent.innerHTML = `
+                <p class="font-semibold">${event.title}</p>
+                <p>${weekday}, ${event.day}. ${monthNames[event.month]} ${event.year}</p>
+                <p>${event.time}, ${event.location}</p>
+                <a href="/termine.html" class="text-amber-600 hover:underline mt-2 inline-block">Alle Termine →</a>
+            `;
+        }
+
+        // Load next event on page load
+        displayNextEvent();
     </script>
 </body>
 </html> 

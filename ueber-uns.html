@@ -30,10 +30,9 @@
 
                     <!-- Desktop Navigation -->
                     <ul class="hidden md:flex space-x-6">
-                        <li><a href="/" class="nav-link">Startseite</a></li>
                         <li><a href="/aktuelles.html" class="nav-link">Aktuelles</a></li>
                         <li><a href="/termine.html" class="nav-link">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="nav-link">Über uns</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link active">Über uns</a></li>
                         <li><a href="/infos.html" class="nav-link">Infos</a></li>
                         <li><a href="/stockwaage.html" class="nav-link">Stockwaage</a></li>
                         <li><a href="/bienen-hummeln-co.html" class="nav-link">Bienen & Co</a></li>
@@ -44,14 +43,13 @@
                 <!-- Mobile Navigation -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <ul class="py-4">
-                        <li><a href="/" class="block py-2">Startseite</a></li>
-                        <li><a href="/aktuelles.html" class="block py-2">Aktuelles</a></li>
-                        <li><a href="/termine.html" class="block py-2">Termine</a></li>
-                        <li><a href="/ueber-uns.html" class="block py-2">Über uns</a></li>
-                        <li><a href="/infos.html" class="block py-2">Infos</a></li>
-                        <li><a href="/stockwaage.html" class="block py-2">Stockwaage</a></li>
-                        <li><a href="/bienen-hummeln-co.html" class="block py-2">Bienen & Co</a></li>
-                        <li><a href="/kontakt.html" class="block py-2">Kontakt</a></li>
+                        <li><a href="/aktuelles.html" class="nav-link block py-2">Aktuelles</a></li>
+                        <li><a href="/termine.html" class="nav-link block py-2">Termine</a></li>
+                        <li><a href="/ueber-uns.html" class="nav-link active block py-2">Über uns</a></li>
+                        <li><a href="/infos.html" class="nav-link block py-2">Infos</a></li>
+                        <li><a href="/stockwaage.html" class="nav-link block py-2">Stockwaage</a></li>
+                        <li><a href="/bienen-hummeln-co.html" class="nav-link block py-2">Bienen & Co</a></li>
+                        <li><a href="/kontakt.html" class="nav-link block py-2">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,11 +61,11 @@
 
                 <!-- Hero Section -->
                 <div class="relative h-96 mb-12 rounded-lg overflow-hidden">
-                    <img src="img/about/vereinsheim.jpg" alt="Unser Vereinsheim" class="w-full h-full object-cover">
+                    <img src="img/Bilder/20240708_163015.jpg" alt="Unser Vereinsheim" class="w-full h-full object-cover object-[center_top]" style="object-position: center 15%;">
                     <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
                         <div class="text-white p-8 max-w-2xl">
                             <h2 class="text-3xl font-bold mb-4">Willkommen beim Imkerverein Hadamar-Dornburg</h2>
-                            <p class="text-lg">Seit über 100 Jahren setzen wir uns für die Imkerei und den Erhalt der Bienenvölker in unserer Region ein.</p>
+                            <p class="text-lg">Seit über 75 Jahren setzen wir uns für die Imkerei und den Erhalt der Bienenvölker in unserer Region ein.</p>
                         </div>
                     </div>
                 </div>
@@ -103,33 +101,36 @@
                 <!-- Vorstand -->
                 <section class="mb-16">
                     <h2 class="text-3xl font-bold mb-8 text-center">Unser Vorstand</h2>
-                    <div class="grid md:grid-cols-3 gap-8">
+                    <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
                         <div class="card p-6 text-center hover-grow fade-in">
-                            <img src="img/about/vorstand1.jpg" alt="Michael Stahl" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Michael Stahl" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold">Michael Stahl</h3>
                             <p class="text-gray-600">1. Vorsitzender</p>
-                            <div class="mt-4 text-gray-700">
-                                <p>Imker seit 1995</p>
-                                <p>Schwerpunkt: Vereinsführung & Öffentlichkeitsarbeit</p>
-                            </div>
                         </div>
                         <div class="card p-6 text-center hover-grow fade-in">
-                            <img src="img/about/vorstand2.jpg" alt="Anna Schmidt" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold">Anna Schmidt</h3>
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Sonja Dimter" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Sonja Dimter</h3>
                             <p class="text-gray-600">2. Vorsitzende</p>
-                            <div class="mt-4 text-gray-700">
-                                <p>Imkerin seit 2005</p>
-                                <p>Schwerpunkt: Schulungen & Workshops</p>
-                            </div>
                         </div>
                         <div class="card p-6 text-center hover-grow fade-in">
-                            <img src="img/about/vorstand3.jpg" alt="Peter Weber" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold">Peter Weber</h3>
-                            <p class="text-gray-600">Schriftführer</p>
-                            <div class="mt-4 text-gray-700">
-                                <p>Imker seit 2010</p>
-                                <p>Schwerpunkt: Dokumentation & Organisation</p>
-                            </div>
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Karin Friedrich" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Karin Friedrich</h3>
+                            <p class="text-gray-600">1. Schriftführer</p>
+                        </div>
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Dr. Gerhard Balser" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Dr. Gerhard Balser</h3>
+                            <p class="text-gray-600">2. Schriftführer</p>
+                        </div>
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Dr. Wilhelm Schuy" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Dr. Wilhelm Schuy</h3>
+                            <p class="text-gray-600">1. Kassierer</p>
+                        </div>
+                        <div class="card p-6 text-center hover-grow fade-in">
+                            <img src="img/Bilder/Vorstand-Avatar.png" alt="Ralf Warnecke" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold">Ralf Warnecke</h3>
+                            <p class="text-gray-600">2. Kassierer</p>
                         </div>
                     </div>
                 </section>
@@ -141,34 +142,34 @@
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-24 text-center">
-                                    <span class="text-xl font-bold text-amber-600">1920</span>
+                                    <span class="text-xl font-bold text-amber-600">1949</span>
                                 </div>
                                 <div class="flex-grow">
                                     <h3 class="text-xl font-semibold mb-2">Gründung des Vereins</h3>
                                     <p class="text-gray-700">
-                                        Am 15. März 1920 wurde der Imkerverein von 12 engagierten Imkern gegründet.
+                                        29.04.1949 Gründungsversammlung
                                     </p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-24 text-center">
-                                    <span class="text-xl font-bold text-amber-600">1965</span>
+                                    <span class="text-xl font-bold text-amber-600">1999</span>
                                 </div>
                                 <div class="flex-grow">
-                                    <h3 class="text-xl font-semibold mb-2">Bau des Vereinsheims</h3>
+                                    <h3 class="text-xl font-semibold mb-2">Zusammenschluss zum Imkerverein Hadamar-Dornburg</h3>
                                     <p class="text-gray-700">
-                                        Einweihung unseres Vereinsheims mit Lehrbienenstand.
+                                        12.01.1999 im Gasthaus "Vier Linden"
                                     </p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-24 text-center">
-                                    <span class="text-xl font-bold text-amber-600">2020</span>
+                                    <span class="text-xl font-bold text-amber-600">2024</span>
                                 </div>
                                 <div class="flex-grow">
-                                    <h3 class="text-xl font-semibold mb-2">100-jähriges Jubiläum</h3>
+                                    <h3 class="text-xl font-semibold mb-2">75-jähriges Jubiläum</h3>
                                     <p class="text-gray-700">
-                                        Feier des 100-jährigen Bestehens mit großem Festakt und Ausstellung.
+                                        Feier mit über das Jahr verteilten Aktionen
                                     </p>
                                 </div>
                             </div>
@@ -216,7 +217,7 @@
         <!-- Footer -->
         <footer class="bg-amber-100 py-8 mt-12">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Über uns</h4>
                         <p class="text-gray-700">Imkerverein Hadamar-Dornburg e.V.<br>Gemeinsam für Bienen und Natur.</p>
@@ -236,20 +237,9 @@
                             <li><a href="/datenschutz.html" class="text-gray-700 hover:text-amber-800">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-700 hover:text-amber-800">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mt-8 pt-8 border-t border-amber-200 text-center text-gray-700">
-                    <p>&copy; 2024 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Imkerverein Hadamar-Dornburg e.V. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
